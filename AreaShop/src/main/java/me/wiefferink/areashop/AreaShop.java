@@ -13,7 +13,6 @@ import me.wiefferink.areashop.managers.FeatureManager;
 import me.wiefferink.areashop.managers.FileManager;
 import me.wiefferink.areashop.managers.Manager;
 import me.wiefferink.areashop.managers.SignLinkerManager;
-import me.wiefferink.areashop.tools.Analytics;
 import me.wiefferink.areashop.tools.GithubUpdateCheck;
 import me.wiefferink.areashop.tools.Utils;
 import me.wiefferink.bukkitdo.Do;
@@ -382,10 +381,6 @@ public final class AreaShop extends JavaPlugin implements AreaShopInterface {
 			signLinkerManager = new SignLinkerManager();
 			managers.add(signLinkerManager);
 
-			// Enable Metrics if config allows it
-			if(getConfig().getBoolean("sendStats")) {
-				Analytics.start();
-			}
 
 			// Register dynamic permission (things declared in config)
 			registerDynamicPermissions();

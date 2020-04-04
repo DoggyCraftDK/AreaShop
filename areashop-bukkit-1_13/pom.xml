@@ -14,12 +14,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>craftbukkit</artifactId>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
             <version>1.13-R0.1-SNAPSHOT</version>
             <type>jar</type>
-            <scope>provided</scope>
             <optional>true</optional>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
